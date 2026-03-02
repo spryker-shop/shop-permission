@@ -15,9 +15,6 @@ use Twig\TwigFunction;
  */
 class PermissionTwigExtensionPlugin extends AbstractTwigExtensionPlugin
 {
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return static::class;

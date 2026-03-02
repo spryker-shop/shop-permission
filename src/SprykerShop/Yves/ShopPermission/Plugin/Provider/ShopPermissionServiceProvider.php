@@ -66,11 +66,6 @@ class ShopPermissionServiceProvider extends AbstractPlugin implements ServicePro
         return $functions;
     }
 
-    /**
-     * @param \Twig\Environment $twig
-     *
-     * @return \Twig\Environment
-     */
     protected function registerPermissionTwigExtensions(Environment $twig): Environment
     {
         foreach ($this->getFactory()->getPermissionTwigExtensionPlugins() as $extensionPlugin) {

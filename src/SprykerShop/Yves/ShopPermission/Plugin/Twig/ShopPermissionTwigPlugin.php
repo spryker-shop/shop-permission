@@ -33,11 +33,6 @@ class ShopPermissionTwigPlugin extends AbstractTwigExtensionPlugin
         return $twig;
     }
 
-    /**
-     * @param \Twig\Environment $twig
-     *
-     * @return \Twig\Environment
-     */
     protected function registerPermissionTwigExtensions(Environment $twig): Environment
     {
         foreach ($this->getFactory()->getPermissionTwigExtensionPlugins() as $extensionPlugin) {
